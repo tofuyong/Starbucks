@@ -67,7 +67,6 @@ extension HomeHeaderView {
         // Set color for image and text
         config.imagePlacement = .leading  // Image on the left side of text
         config.imagePadding = 8  // Space between the image and text
-        
         config.baseForegroundColor = .secondaryLabel // Color for text and image
         
         // Apply the configuration to the button

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0AC5B72B3B111800FC9CC6 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AC5B62B3B111800FC9CC6 /* PlaceholderViewController.swift */; };
 		DE93C3532B35780F000376D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93C3522B35780F000376D7 /* AppDelegate.swift */; };
 		DE93C3572B35780F000376D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93C3562B35780F000376D7 /* HomeViewController.swift */; };
 		DE93C35C2B357810000376D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE93C35B2B357810000376D7 /* Assets.xcassets */; };
 		DE93C35F2B357810000376D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE93C35D2B357810000376D7 /* LaunchScreen.storyboard */; };
 		DE93C3682B359CFE000376D7 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93C3672B359CFE000376D7 /* Factories.swift */; };
 		DE93C36B2B35A72E000376D7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */; };
+		DEF004B22B3E706C003BF1DA /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B12B3E706C003BF1DA /* TileViewController.swift */; };
+		DEF004B42B3E70BB003BF1DA /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B32B3E70BB003BF1DA /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0AC5B62B3B111800FC9CC6 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
 		DE93C34F2B35780F000376D7 /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE93C3522B35780F000376D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE93C3562B35780F000376D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		DE93C3602B357810000376D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE93C3672B359CFE000376D7 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		DEF004B12B3E706C003BF1DA /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		DEF004B32B3E70BB003BF1DA /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				DE93C3562B35780F000376D7 /* HomeViewController.swift */,
 				DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */,
+				DE0AC5B62B3B111800FC9CC6 /* PlaceholderViewController.swift */,
+				DEF004B12B3E706C003BF1DA /* TileViewController.swift */,
+				DEF004B32B3E70BB003BF1DA /* TileView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -154,8 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE93C36B2B35A72E000376D7 /* HomeHeaderView.swift in Sources */,
+				DEF004B42B3E70BB003BF1DA /* TileView.swift in Sources */,
 				DE93C3682B359CFE000376D7 /* Factories.swift in Sources */,
+				DEF004B22B3E706C003BF1DA /* TileViewController.swift in Sources */,
 				DE93C3572B35780F000376D7 /* HomeViewController.swift in Sources */,
+				DE0AC5B72B3B111800FC9CC6 /* PlaceholderViewController.swift in Sources */,
 				DE93C3532B35780F000376D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
