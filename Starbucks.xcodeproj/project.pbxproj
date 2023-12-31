@@ -14,8 +14,11 @@
 		DE93C35F2B357810000376D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE93C35D2B357810000376D7 /* LaunchScreen.storyboard */; };
 		DE93C3682B359CFE000376D7 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93C3672B359CFE000376D7 /* Factories.swift */; };
 		DE93C36B2B35A72E000376D7 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */; };
+		DEB3CB482B413BC7003648C4 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3CB472B413BC7003648C4 /* BalanceView.swift */; };
 		DEF004B22B3E706C003BF1DA /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B12B3E706C003BF1DA /* TileViewController.swift */; };
 		DEF004B42B3E70BB003BF1DA /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B32B3E70BB003BF1DA /* TileView.swift */; };
+		DEF004B72B3ED0AC003BF1DA /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B62B3ED0AC003BF1DA /* RewardTileViewController.swift */; };
+		DEF004B92B3ED0B6003BF1DA /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B82B3ED0B6003BF1DA /* RewardTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +31,11 @@
 		DE93C3602B357810000376D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE93C3672B359CFE000376D7 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		DEB3CB472B413BC7003648C4 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		DEF004B12B3E706C003BF1DA /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		DEF004B32B3E70BB003BF1DA /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		DEF004B62B3ED0AC003BF1DA /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
+		DEF004B82B3ED0B6003BF1DA /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		DE93C3692B35A6F7000376D7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DEF004B52B3ED084003BF1DA /* Rewards */,
 				DE93C3562B35780F000376D7 /* HomeViewController.swift */,
 				DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */,
 				DE0AC5B62B3B111800FC9CC6 /* PlaceholderViewController.swift */,
@@ -90,6 +97,16 @@
 				DEF004B32B3E70BB003BF1DA /* TileView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DEF004B52B3ED084003BF1DA /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				DEF004B62B3ED0AC003BF1DA /* RewardTileViewController.swift */,
+				DEF004B82B3ED0B6003BF1DA /* RewardTileView.swift */,
+				DEB3CB472B413BC7003648C4 /* BalanceView.swift */,
+			);
+			path = Rewards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +180,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE93C36B2B35A72E000376D7 /* HomeHeaderView.swift in Sources */,
+				DEB3CB482B413BC7003648C4 /* BalanceView.swift in Sources */,
 				DEF004B42B3E70BB003BF1DA /* TileView.swift in Sources */,
 				DE93C3682B359CFE000376D7 /* Factories.swift in Sources */,
+				DEF004B92B3ED0B6003BF1DA /* RewardTileView.swift in Sources */,
 				DEF004B22B3E706C003BF1DA /* TileViewController.swift in Sources */,
 				DE93C3572B35780F000376D7 /* HomeViewController.swift in Sources */,
 				DE0AC5B72B3B111800FC9CC6 /* PlaceholderViewController.swift in Sources */,
 				DE93C3532B35780F000376D7 /* AppDelegate.swift in Sources */,
+				DEF004B72B3ED0AC003BF1DA /* RewardTileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
