@@ -25,15 +25,14 @@ class HomeHeaderView: UIView {
 
 extension HomeHeaderView {
     func style() {
+        backgroundColor = .white
+        
         greeting.translatesAutoresizingMaskIntoConstraints = false
         greeting.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         greeting.text = "Good afternoon, Tofu ☀️"
         greeting.numberOfLines = 0
         greeting.lineBreakMode = .byWordWrapping
         
-//        inboxButton.translatesAutoresizingMaskIntoConstraints = false
-//        inboxButton.setTitleColor(.label, for: .normal)
-//        inboxButton.setTitle("Inbox", for: .normal)
         makeInboxButton()
     }
     

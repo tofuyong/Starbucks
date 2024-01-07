@@ -38,6 +38,7 @@ func makeGreenButton(withText text: String) -> UIButton {
     
     var config = UIButton.Configuration.plain()
     config.title = text
+    config.baseForegroundColor = UIColor.white
     config.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
     button.configuration = config
     
@@ -86,4 +87,11 @@ func makeClearButton(withText text: String) -> UIButton {
 //    button.setTitleColor(.label, for: .normal)
 //    button.layer.borderColor = UIColor.label.cgColor
 //    button.backgroundColor = .systemBackground
+}
+
+public extension NSLayoutConstraint {
+    @objc func setActiveBreakable(priority: UILayoutPriority = UILayoutPriority(900)) {
+        self.priority = priority
+        isActive = true
+    }
 }
