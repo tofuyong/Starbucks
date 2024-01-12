@@ -19,6 +19,13 @@
 		DEB3CB4A2B419921003648C4 /* RewardsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3CB492B419921003648C4 /* RewardsGraphView.swift */; };
 		DEB3CB4D2B41A796003648C4 /* StarAndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3CB4C2B41A796003648C4 /* StarAndPoints.swift */; };
 		DEB3CB4F2B41A872003648C4 /* StarRewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB3CB4E2B41A872003648C4 /* StarRewardsRow.swift */; };
+		DEDC23CC2B5158CF009E9473 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23C62B5158CF009E9473 /* Transaction.swift */; };
+		DEDC23CD2B5158CF009E9473 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23C72B5158CF009E9473 /* History.swift */; };
+		DEDC23CE2B5158CF009E9473 /* HistorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23C82B5158CF009E9473 /* HistorySection.swift */; };
+		DEDC23CF2B5158CF009E9473 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23C92B5158CF009E9473 /* HistoryViewCell.swift */; };
+		DEDC23D02B5158CF009E9473 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23CA2B5158CF009E9473 /* HistoryViewModel.swift */; };
+		DEDC23D12B5158CF009E9473 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23CB2B5158CF009E9473 /* HistoryService.swift */; };
+		DEDC23D32B515907009E9473 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC23D22B515907009E9473 /* HistoryViewController.swift */; };
 		DEF004B22B3E706C003BF1DA /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B12B3E706C003BF1DA /* TileViewController.swift */; };
 		DEF004B42B3E70BB003BF1DA /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B32B3E70BB003BF1DA /* TileView.swift */; };
 		DEF004B72B3ED0AC003BF1DA /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF004B62B3ED0AC003BF1DA /* RewardsTileViewController.swift */; };
@@ -40,6 +47,13 @@
 		DEB3CB492B419921003648C4 /* RewardsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGraphView.swift; sourceTree = "<group>"; };
 		DEB3CB4C2B41A796003648C4 /* StarAndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAndPoints.swift; sourceTree = "<group>"; };
 		DEB3CB4E2B41A872003648C4 /* StarRewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRewardsRow.swift; sourceTree = "<group>"; };
+		DEDC23C62B5158CF009E9473 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		DEDC23C72B5158CF009E9473 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		DEDC23C82B5158CF009E9473 /* HistorySection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySection.swift; sourceTree = "<group>"; };
+		DEDC23C92B5158CF009E9473 /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		DEDC23CA2B5158CF009E9473 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		DEDC23CB2B5158CF009E9473 /* HistoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		DEDC23D22B515907009E9473 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		DEF004B12B3E706C003BF1DA /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		DEF004B32B3E70BB003BF1DA /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		DEF004B62B3ED0AC003BF1DA /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
@@ -97,8 +111,8 @@
 		DE93C3692B35A6F7000376D7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DEB3CB4B2B41A778003648C4 /* StarRewards */,
-				DEF004B52B3ED084003BF1DA /* Rewards */,
+				DEDC23C52B515894009E9473 /* HistoryTile */,
+				DEF004B52B3ED084003BF1DA /* RewardsTile */,
 				DE93C3562B35780F000376D7 /* HomeViewController.swift */,
 				DE93C36A2B35A72E000376D7 /* HomeHeaderView.swift */,
 				DE0AC5B62B3B111800FC9CC6 /* PlaceholderViewController.swift */,
@@ -118,15 +132,38 @@
 			path = StarRewards;
 			sourceTree = "<group>";
 		};
-		DEF004B52B3ED084003BF1DA /* Rewards */ = {
+		DEDC23C52B515894009E9473 /* HistoryTile */ = {
 			isa = PBXGroup;
 			children = (
+				DEDC23D42B515935009E9473 /* Models */,
+				DEDC23D22B515907009E9473 /* HistoryViewController.swift */,
+				DEDC23C92B5158CF009E9473 /* HistoryViewCell.swift */,
+				DEDC23CA2B5158CF009E9473 /* HistoryViewModel.swift */,
+				DEDC23CB2B5158CF009E9473 /* HistoryService.swift */,
+			);
+			path = HistoryTile;
+			sourceTree = "<group>";
+		};
+		DEDC23D42B515935009E9473 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEDC23C72B5158CF009E9473 /* History.swift */,
+				DEDC23C82B5158CF009E9473 /* HistorySection.swift */,
+				DEDC23C62B5158CF009E9473 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEF004B52B3ED084003BF1DA /* RewardsTile */ = {
+			isa = PBXGroup;
+			children = (
+				DEB3CB4B2B41A778003648C4 /* StarRewards */,
 				DEF004B62B3ED0AC003BF1DA /* RewardsTileViewController.swift */,
 				DEF004B82B3ED0B6003BF1DA /* RewardsTileView.swift */,
 				DEB3CB472B413BC7003648C4 /* BalanceView.swift */,
 				DEB3CB492B419921003648C4 /* RewardsGraphView.swift */,
 			);
-			path = Rewards;
+			path = RewardsTile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,18 +238,25 @@
 			files = (
 				DEB3CB4A2B419921003648C4 /* RewardsGraphView.swift in Sources */,
 				DE93C36B2B35A72E000376D7 /* HomeHeaderView.swift in Sources */,
+				DEDC23D12B5158CF009E9473 /* HistoryService.swift in Sources */,
 				DEB3CB482B413BC7003648C4 /* BalanceView.swift in Sources */,
 				DEF004B42B3E70BB003BF1DA /* TileView.swift in Sources */,
 				DEB3CB4D2B41A796003648C4 /* StarAndPoints.swift in Sources */,
+				DEDC23D02B5158CF009E9473 /* HistoryViewModel.swift in Sources */,
+				DEDC23CF2B5158CF009E9473 /* HistoryViewCell.swift in Sources */,
 				DE93C3682B359CFE000376D7 /* Factories.swift in Sources */,
 				DEF004B92B3ED0B6003BF1DA /* RewardsTileView.swift in Sources */,
 				DEB3CB4F2B41A872003648C4 /* StarRewardsRow.swift in Sources */,
 				DEF004B22B3E706C003BF1DA /* TileViewController.swift in Sources */,
+				DEDC23D32B515907009E9473 /* HistoryViewController.swift in Sources */,
 				DE93C3572B35780F000376D7 /* HomeViewController.swift in Sources */,
+				DEDC23CD2B5158CF009E9473 /* History.swift in Sources */,
 				DE0AC5B72B3B111800FC9CC6 /* PlaceholderViewController.swift in Sources */,
 				DE7E7A3D2B4680B700E0C1F7 /* StarRewardsView.swift in Sources */,
 				DE93C3532B35780F000376D7 /* AppDelegate.swift in Sources */,
 				DEF004B72B3ED0AC003BF1DA /* RewardsTileViewController.swift in Sources */,
+				DEDC23CC2B5158CF009E9473 /* Transaction.swift in Sources */,
+				DEDC23CE2B5158CF009E9473 /* HistorySection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
